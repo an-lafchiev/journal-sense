@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
 import HomeData from "@/../public/content_home.json";
-
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 export default function Navigation() {
   const navigationData = HomeData.navigation;
   const companyName = HomeData.footer.company_info.name;
@@ -23,20 +23,26 @@ export default function Navigation() {
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            href="/signin"
-            className="text-sm font-medium px-4 py-2 rounded-md hover:bg-gray-100"
-          >
-            Sign In
-          </Link>
-          <Link
-            href="/signup"
-            className="text-sm font-medium px-4 py-2 rounded-md bg-teal-600 text-white hover:bg-teal-700"
-          >
-            Sign Up
-          </Link>
-        </div>
+
+        <SignedOut>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/sign-in"
+              className="text-sm font-medium px-4 py-2 rounded-md hover:bg-gray-100"
+            >
+              Sign In
+            </Link>
+            <Link
+              href="/sign-up"
+              className="text-sm font-medium px-4 py-2 rounded-md bg-teal-600 text-white hover:bg-teal-700"
+            >
+              Sign Up
+            </Link>
+          </div>
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
       </div>
     </header>
   );
