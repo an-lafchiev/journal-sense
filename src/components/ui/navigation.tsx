@@ -1,33 +1,27 @@
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
+import HomeData from "@/../public/content_home.json";
 
 export default function Navigation() {
+  const navigationData = HomeData.navigation;
+  const companyName = HomeData.footer.company_info.name;
   return (
     <header className="border-b">
       <div className="container mx-auto px-4 flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2">
           <BookOpen className="h-6 w-6 text-teal-600" />
-          <span className="text-xl font-bold">JournalSense</span>
+          <span className="text-xl font-bold">{companyName}</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 flex-1 mx-10">
-          <Link
-            href="#features"
-            className="text-sm font-medium hover:text-teal-600 transition-colors"
-          >
-            Features
-          </Link>
-          <Link
-            href="#how-it-works"
-            className="text-sm font-medium hover:text-teal-600 transition-colors"
-          >
-            How It Works
-          </Link>
-          <Link
-            href="#testimonials"
-            className="text-sm font-medium hover:text-teal-600 transition-colors"
-          >
-            Testimonials
-          </Link>
+          {navigationData.map((item) => (
+            <Link
+              key={item.url}
+              href={item.url}
+              className="text-sm font-medium hover:text-teal-600 transition-colors"
+            >
+              {item.name}
+            </Link>
+          ))}
         </nav>
         <div className="flex items-center gap-4">
           <Link

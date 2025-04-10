@@ -74,6 +74,20 @@
       "url": "/get-started"
     }
   },
+  "navigation": [
+    {
+      "name": "Features",
+      "url": "/#features"
+    },
+    {
+      "name": "How It Works",
+      "url": "/#about"
+    },
+    {
+      "name": "Testimonials",
+      "url": "/#testimonials"
+    }
+  ],
   "footer": {
     "company_info": {
       "name": "JournalSense",
