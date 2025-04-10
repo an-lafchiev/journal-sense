@@ -1,0 +1,128 @@
+{
+  "hero_section": {
+    "title": "Discover insights from your journal with AI",
+    "description": "Our AI-powered journal analyzes your entries to help you understand patterns, emotions, and growth opportunities in your writing."
+  },
+  "features_section": {
+    "title": "Powerful Features",
+    "subHeading": "Unlock the full potential of your journaling experience",
+    "features": [
+      {
+        "title": "AI Analysis",
+        "description": "Our advanced AI analyzes your journal entries to identify patterns, emotions, and insights.",
+        "icon": "book"
+      },
+      {
+        "title": "Mood Tracking",
+        "description": "Track your emotional well-being over time with visual charts and personalized insights.",
+        "icon": "chart"
+      },
+      {
+        "title": "Private & Secure",
+        "description": "Your journal entries are encrypted and never shared with third parties.",
+        "icon": "shield"
+      }
+    ]
+  },
+  "how_it_works_section": {
+    "title": "How It Works",
+    "subHeading": "Getting started with JournalSense is simple and straightforward",
+    "steps": [
+      {
+        "step_number": 1,
+        "title": "Create an Account",
+        "description": "Sign up for a free account to get started with JournalSense."
+      },
+      {
+        "step_number": 2,
+        "title": "Write Your Entries",
+        "description": "Start journaling about your day, thoughts, and feelings."
+      },
+      {
+        "step_number": 3,
+        "title": "Get AI Insights",
+        "description": "Receive personalized insights and analysis based on your journal entries."
+      }
+    ]
+  },
+  "testimonials_section": {
+    "title": "What Our Users Say",
+    "subHeading": "Hear from people who have transformed their journaling experience with JournalSense.",
+    "testimonials": [
+      {
+        "name": "Sarah K.",
+        "role": "Writer",
+        "quote": "JournalSense has helped me understand my writing patterns and emotional trends. It's like having a personal therapist and writing coach in one."
+      },
+      {
+        "name": "Michael T.",
+        "role": "Student",
+        "quote": "I've been journaling for years, but the insights from JournalSense have taken my self-reflection to a whole new level."
+      },
+      {
+        "name": "Jessica M.",
+        "role": "Therapist",
+        "quote": "I recommend JournalSense to my clients as a tool for self-discovery. The AI analysis provides valuable insights between our sessions."
+      }
+    ]
+  },
+  "call_to_action": {
+    "title": "Ready to transform your journaling experience?",
+    "description": "Join thousands of users who are discovering new insights about themselves through AI-powered journaling.",
+    "button": {
+      "text": "Get Started for Free",
+      "url": "/get-started"
+    }
+  },
+  "footer": {
+    "company_info": {
+      "name": "JournalSense",
+      "tagline": "Transforming journaling with the power of AI."
+    },
+    "links": {
+      "product": [
+        {
+          "name": "Features",
+          "url": "/features"
+        },
+        {
+          "name": "How It Works",
+          "url": "/how-it-works"
+        },
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        }
+      ],
+      "company": [
+        {
+          "name": "About Us",
+          "url": "/about"
+        },
+        {
+          "name": "Blog",
+          "url": "/blog"
+        },
+        {
+          "name": "Careers",
+          "url": "/careers"
+        }
+      ],
+      "legal": [
+        {
+          "name": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "name": "Terms of Service",
+          "url": "/terms-of-service"
+        },
+        {
+          "name": "Cookie Policy",
+          "url": "/cookie-policy"
+        }
+      ]
+    },
+    "copyright": "JournalSense. All rights reserved."
+  }
+}
