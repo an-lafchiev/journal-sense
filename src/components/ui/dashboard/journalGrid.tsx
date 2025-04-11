@@ -1,6 +1,6 @@
 import Link from "next/link";
 import EmptyJournal from "./emptyJournal";
-import { Prisma } from "@/generated/prisma";
+import { Prisma } from "@prisma/client";
 import { moodEmojis } from "@/lib/constants";
 
 interface JournalGridProps {

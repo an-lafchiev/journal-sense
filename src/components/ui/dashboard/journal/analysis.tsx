@@ -1,4 +1,4 @@
-import { Prisma } from "@/generated/prisma";
+import { Prisma } from "@prisma/client";
 import { moodEmojis } from "@/lib/constants";
 
 export default function Analysis({

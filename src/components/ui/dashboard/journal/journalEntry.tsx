@@ -1,4 +1,4 @@
-import { Prisma } from "@/generated/prisma";
+import { Prisma } from "@prisma/client";
 import { Calendar, Clock } from "lucide-react";
 import Tags from "./tags";
 import { moodEmojis } from "@/lib/constants";

@@ -1,11 +1,6 @@
 import MobileSidebar from "@/components/ui/dashboard/mobileSidebar";
 import Sidebar from "@/components/ui/dashboard/sidebar";
 
-const links = [
-  { name: "Journals", href: "/journal" },
-  { name: "History", href: "/history" },
-];
-
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex h-screen bg-gray-50">

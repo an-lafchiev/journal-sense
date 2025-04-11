@@ -1,4 +1,4 @@
-import { JournalEntry } from "@/generated/prisma";
+import { JournalEntry } from "@prisma/client";
 
 export default function Tags({ tags }: { tags: JournalEntry["tags"] }) {
   if (!tags.length) {

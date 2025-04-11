@@ -1,6 +1,6 @@
 "use server";
-import { JournalEntry } from "@/generated/prisma";
 import { openai } from "@/lib/openai";
+import { JournalEntry } from "@prisma/client";
 
 export async function analyzeJournalEntry(entry: JournalEntry) {
   const response = await openai.responses.create({
