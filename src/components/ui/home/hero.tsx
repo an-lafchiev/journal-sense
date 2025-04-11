@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { auth } from "@clerk/nextjs/server";
 import { ArrowRight } from "lucide-react";
 import HomeData from "@/../public/content_home.json";
 
-export default function Hero() {
+export default async function Hero() {
+  const { userId } = await auth();
+  const href = userId ? "/journal" : "/new-user";
+
   const heroData = HomeData.hero_section;
 
   return (
@@ -16,14 +20,14 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <Link
-            href="/signup"
+            href={href}
             className="px-6 py-3 rounded-md bg-teal-600 text-white hover:bg-teal-700 font-medium flex items-center justify-center"
           >
             Get Started
             <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
           <Link
-            href="#how-it-works"
+            href="#about"
             className="px-6 py-3 rounded-md border border-gray-300 hover:bg-gray-50 font-medium"
           >
             Learn More
