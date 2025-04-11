@@ -1,16 +1,7 @@
 import Link from "next/link";
 import EmptyJournal from "./emptyJournal";
 import { Prisma } from "@/generated/prisma";
-
-const moodEmojis: Record<string, string> = {
-  Happy: "😊",
-  Sad: "😢",
-  Angry: "😠",
-  Excited: "🤩",
-  Stressed: "😰",
-  Thoughtful: "🤔",
-  Calm: "😌",
-};
+import { moodEmojis } from "@/lib/constants";
 
 interface JournalGridProps {
   entries: Prisma.JournalEntryGetPayload<{ include: { analysis: true } }>[];
